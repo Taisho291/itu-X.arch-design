@@ -332,9 +332,10 @@ domains:
     name: Micro-segmentation
     abbrv:
     type: Security Design Principle
-    definitions:
+    definitions: |
+      DEF01 NIST.SP.800-215 Section 5.1: Microsegmentation is a security design practice where an internal network (e.g., in the data  center, cloud provider region) is divided into isolated segments so that the traffic in and out of each segment can be monitored and controlled [21]. The primary purpose of microsegmentation is to provide a degree of isolation to prevent attack escalation.
     descriptions: Networks are divided into small, secure zones to maintain separate access for separate parts of the network. This limits an attacker's ability to move laterally across a network.
-    sources:
+    sources: NIST.SP.800-215
     evolution:
     position:
     include:
@@ -375,9 +376,11 @@ domains:
     name: Continuous verification
     abbrv:
     type: Security Design Principle
-    definitions:
+    definitions: |
+      DEF1: All resource authentication and authorization are dynamic and strictly enforced before access is allowed. This is a constant cycle of obtaining access, scanning and assessing threats, adapting, and continually reevaluating trust in ongoing communication. 
     descriptions: Trust is never assumed and must be continually reassessed. Authentication and authorization are required for all users and devices seeking access to resources, regardless of their location.
-    sources:
+    sources: |
+      NIST SP 800-207 
     evolution:
     position:
     include:
